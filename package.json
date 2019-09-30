@@ -1,0 +1,8 @@
+{
+  "name": "henning",
+  "version": "1.0.0",
+  "description": "First Project of Collective Play F19.",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC"
+}
