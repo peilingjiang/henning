@@ -4,5 +4,9 @@
   "description": "First Project of Collective Play F19.",
   "main": "server.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
 }
