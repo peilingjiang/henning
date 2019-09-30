@@ -43,6 +43,8 @@ inputs.on('connection', function(socket){
 
     // Send it to all of the output clients
     outputs.emit('message', message);
+    // Emit also to inuts to calculate speed
+    inputs.emit('message', message);
   });
 
   // Listen for this input client to disconnect

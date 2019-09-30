@@ -45,7 +45,7 @@ socket.on('connect', function() {
 });
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(800, 800);
   background(255);
   // Each user will be assigned to some position in the center of canvas
   // as the starting point
@@ -54,7 +54,7 @@ function setup() {
   userColor = [random(50, 200), random(50, 200), random(50, 200)];
 
   video = createCapture(VIDEO);
-  video.size(width, height);
+  video.size(800, 600);
 
   // Create a new poseNet method with a single detection
   poseNet = ml5.poseNet(video, modelReady);
