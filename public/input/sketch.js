@@ -92,11 +92,12 @@ function setup() {
         // r: userR,
         // color: userColor,
         // alpha: userAlpha
+        id: message.id,
         speed: data.speed,
         position: data.position,
         r: data.r,
         pR: data.r, // Past radius, for lerp() if needed
-        color: data.color,
+        color: userColor,
         alpha: data.alpha
       }
     }
@@ -180,7 +181,7 @@ function compete_users_speed() {
 function update_user_node() {
   if (henning) {
     if (henSpeed > 0) {
-      userR += henSpeed - aveSpeed; // Might need mapping
+      userR += (henSpeed - aveSpeed) / 3; // Might need mapping
       userR = constrain(userR, 0, width * 2);
       // Restore alpha
       userAlpha += 1.5;
